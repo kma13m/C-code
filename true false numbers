@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+int a = 5, b = 4, c = 3, d = 2;
+
+if (a < b)
+{
+if (c > b)
+{
+printf("(a < b) and (c > b) are TRUE.");
+}
+else
+{
+printf("(a < b) is TRUE, but (c > b) is FALSE.");
+}
+}
+else
+{
+if (c > b)
+{
+printf("(a < b) is FALSE, but (c > b) is TRUE.");
+}
+else
+{
+printf("(a < b) and (c > b) are FALSE.");
+}
+}
+
+system("pause");
+return 0;
