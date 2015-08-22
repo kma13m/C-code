@@ -1,0 +1,54 @@
+#include <stdio.h>
+
+int main(){
+
+    // Float variables to store item prices
+    float firstitem, seconditem, thirditem = 0;
+    // Variable that stores current tax rate (0.065)
+    float taxrate = 0.065;
+    // Variables used in calculations section
+    float subtotal, total, tax = 0;
+
+
+    // Prompts user to enter price for first item
+    printf("Enter the price of the first item: ");
+    // Reads user input into firstitem variable
+    scanf("%f", &firstitem);
+    // Outputs user entry
+    printf("You entered %.2f \n", firstitem);
+
+
+    // Prompts user to enter price for second item
+    printf("Enter the price of the second item: ");
+    // Reads user input into seconditem variable
+    scanf("%f", &seconditem);
+    // Outputs user entry
+    printf("You entered %.2f \n", seconditem);
+
+
+    // Prompts user to enter price for third item
+    printf("Enter the price of the third item: ");
+    // Reads user input into thirditem variable
+    scanf("%f", &thirditem);
+    // Outputs user entry
+    printf("You entered %.2f \n", thirditem);
+
+    // Calculates order subtotal
+    subtotal = firstitem + seconditem + thirditem;
+    // Calculates tax for order
+    tax = subtotal * taxrate;
+    // Calculates final order
+    total = subtotal + tax;
+
+    // Prints subtotal
+    printf("\nThe total of your order is: $%.2f", subtotal);
+    // Prints tax
+    printf("\nThe tax for your order is: $%.2f", tax);
+    // Prints total
+    printf("\nThe total with tax is $%.2f", total);
+    //Closing message
+    printf("\nThanks for supporting Habitat for Humanity");
+
+    return 0;
+}
+
